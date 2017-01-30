@@ -5,7 +5,7 @@ const server = new Hapi.Server();
 const routeConfigs = require('./route-loader.js');
 
 
-server.connection({port: 3000, host :'localhost'});
+server.connection({port: 80, host :'localhost'});
 
 // /docs
 server.register([require('vision'), require('inert'), { register: require('lout') }], function(err) {
